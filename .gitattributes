@@ -8,5 +8,5 @@
 *.nbt linguist-generated=true
 *.nbt linguist-vendored=true
 
-*.ziplinguist-language=mcfunction
+*.zip linguist-language=mcfunction
 *.zip linguist-language=JSON
