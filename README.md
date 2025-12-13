@@ -1,5 +1,10 @@
 # gulceos-datapack
-# Uyarı:
+# Uyarı 1:
+Bu repo lisanslanmamıştır.
+Kodun kopyalanması, dağıtılması veya yeniden kullanımı sahibinin açık izni olmadan yasaktır.
+Proje olduğu gibi sunulur, oluşabilecek sorunlardan geliştirici sorumlu değildir.
+
+# Uyarı 2:
 ## Bu proje resmî Mojang/Microsoft ürünü değildir.
 ## Bu proje; yönetim menüleri, yardımcı komutlar ve yapılandırılabilir sistemler içerebilir.
 ## Tüm bileşenler opsiyoneldir ve sunucu yapılandırmasına bağlıdır.
