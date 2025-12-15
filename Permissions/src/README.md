@@ -1,4 +1,4 @@
-GULCE Admin Power – Beni Oku
+# GULCE Admin Power – Beni Oku
 
 Bu datapack, vanilla Minecraft için geliştirilmiş gelişmiş izin ve eylem yönetim sistemidir.
 Mod gerekmez. Komut blokları gerekmez. Klasik /op karmaşasına alternatif olarak tasarlanmıştır.
@@ -6,7 +6,7 @@ Mod gerekmez. Komut blokları gerekmez. Klasik /op karmaşasına alternatif olar
 Pack açıklaması (pack.mcmeta) zaten özeti verir:
 GULCE Admin Power v1.0.0 – Gelişmiş İzin ve Eylem Yönetim Sistemi
 
-📁 Kurulum Şekli (Önemli)
+# 📁 Kurulum Şekli (Önemli)
 
 Bu datapack ZIP olarak değil, klasör yapısı korunarak yüklenmelidir.
 
@@ -18,7 +18,7 @@ src/
     └── data/
         └── ...
 
-Doğru Kurulum
+# Doğru Kurulum
 
 src/ klasörü içindeki datapack klasörünü alın
 
@@ -29,7 +29,7 @@ world/datapacks/
 
 dizinine klasör olarak kopyalayın
 
-Oyunda:
+## Oyunda:
 
 /reload
 
@@ -39,9 +39,9 @@ komutunu çalıştırın
 ZIP’e çevirmenize gerek yoktur.
 Klasör yapısı bozulursa datapack yüklenmez.
 
-🎮 Uyumluluk
+# 🎮 Uyumluluk
 
-Minecraft sürümü: pack format 88
+Minecraft sürümü: pack format 88 (1.21.10)
 
 Vanilla uyumlu
 
