@@ -1,0 +1,7 @@
+# ═══════════════════════════════════════════════════
+# Load Help Menu
+# ═══════════════════════════════════════════════════
+
+dialog show @p[tag=gulce_admin,predicate=custom_admin:ui] {"type":"minecraft:notice","title":"❓ Yardım","body":{"type":"minecraft:plain_message","contents":"§l§b=== GULCE Admin Power Yardım ===\n\n§e📌 Komutlar:\n§7• §a/trigger gulce_trigger set 1 §7- Ana menüyü aç\n§7• §a/trigger gulce_trigger set 2 §7- İzin yönetimini aç\n§7• §a/trigger gulce_trigger set 3 §7- Yardımı aç\n§7• §a/trigger gulce_trigger set 4 §7- Hakkında'yı aç\n\n§e📌 İzin Sistemi:\n§7İzinler storage'da tutulur ve oyunculara atanır.\n\n§e📌 Eylem Sistemi:\n§7Eylemler macro ile çalışır ve dinamik olarak yürütülür.\n\n§c⚠️ Sorun mu yaşıyorsunuz?\n§7/reload komutuyla paketi yeniden yükleyin."},"can_close_with_escape":true,"pause":false,"action":{"label":"◀️ Geri","action":{"type":"minecraft:suggest_command","command":" "}}}
+
+tellraw @a[tag=gulce_admin] ["",{"text":"[GULCE] ","color":"gold","bold":true},{"text":"Yardım menüsü yüklendi.","color":"gray"}]
