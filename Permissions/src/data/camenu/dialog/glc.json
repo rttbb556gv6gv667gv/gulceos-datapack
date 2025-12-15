@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:multi_action",
+  "title": "GLC Menü",
+  "body": {
+    "type": "minecraft:plain_message",
+    "contents": "\n\n\n\n\n"
+  },
+  "can_close_with_escape": true,
+  "pause": false,
+  "after_action": "wait_for_response",
+  "columns": 1,
+  "actions": [
+    {
+      "label": "Ana Menüyü Aç",
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "/trigger gulce_trigger set 1"
+      }
+    }
+  ]
+}
