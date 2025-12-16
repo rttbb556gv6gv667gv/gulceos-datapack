@@ -1,3 +1,3 @@
 # GulceOS
-## `Get UUID` Olayı.
+## `G** UU*D` Olayı.
 ## Geleceğe Hazır.
