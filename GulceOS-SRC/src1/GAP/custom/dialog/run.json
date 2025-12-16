@@ -1,0 +1,49 @@
+{
+  "type": "minecraft:multi_action",
+  "title": "Komut Yürütücü",
+  "inputs": [
+    {
+      "type": "minecraft:text",
+      "key": "cmd",
+      "width": 370,
+      "label": "Komut:",
+      "max_length": 199999985,
+      "multiline": {
+        "height": 163
+      }
+    }
+  ],
+  "can_close_with_escape": true,
+  "pause": true,
+  "columns": 3,
+  "actions": [
+    {
+      "label": {
+        "text": "✔",
+        "color": "green",
+        "bold": true,
+        "italic": false
+      },
+      "tooltip": "Yürüt",
+      "width": 20,
+      "action": {
+        "type": "minecraft:dynamic/run_command",
+        "template": "/function custom:run {cmd:\"$(cmd)\"}"
+      }
+    },
+    {
+      "label": {
+        "text": "❌",
+        "color": "red",
+        "bold": true,
+        "italic": false
+      },
+      "tooltip": "Kapat",
+      "width": 20,
+      "action": {
+        "type": "minecraft:suggest_command",
+        "command": " "
+      }
+    }
+  ]
+}

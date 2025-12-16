@@ -1,0 +1,1 @@
+effect give @a minecraft:night_vision 99999 1 true
