@@ -9,7 +9,7 @@ assignees: ''
 ---
 
 ## 📌 Hata Özeti
-<!-- Hata kısa ve net şekilde ne? -->
+ Hata kısa ve net şekilde ne? 
 
 ## 🧩 Datapack Bilgileri
 - Datapack adı:
@@ -24,12 +24,11 @@ assignees: ''
 3.
 
 ## 🎯 Beklenen Davranış
-<!-- Ne olmasını bekliyordun? -->
+ Ne olmasını bekliyordun? 
 
 ## 💥 Gerçekleşen Davranış
-<!-- Ne oldu? -->
+ Ne oldu?
 
 ## 📜 Hata Çıktıları / Log
-```text
 /reload çıktısı
 console hatası
