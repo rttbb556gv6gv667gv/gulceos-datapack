@@ -1,5 +1,5 @@
 ---
-name: Feature request
+name: Güvenlik açığı açıklaması
 about: Vanilla datapack için yeni özellik ve sistem önerileri.
 title: ''
 labels: ''
