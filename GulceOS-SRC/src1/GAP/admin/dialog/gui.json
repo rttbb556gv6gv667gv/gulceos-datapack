@@ -1,0 +1,386 @@
+{
+  "type": "minecraft:multi_action",
+  "title": "Ultimate Admin GUI",
+  "can_close_with_escape": true,
+  "pause": false,
+  "exit_action": {
+    "label": "Kapat",
+    "action": {
+      "type": "minecraft:suggest_command",
+      "command": " "
+    }
+  },
+  "actions": [
+    {
+      "label": "Hızlı Eşya Verme",
+      "action": {
+        "type": "minecraft:show_dialog",
+        "dialog": {
+          "type": "minecraft:multi_action",
+          "title": "Hızlı Eşya Verme",
+          "inputs": [
+            {
+              "type": "minecraft:text",
+              "key": "p",
+              "label": "Player"
+            },
+            {
+              "type": "minecraft:text",
+              "key": "item",
+              "label": "Item / ID"
+            },
+            {
+              "type": "minecraft:text",
+              "key": "amt",
+              "label": "Miktar"
+            }
+          ],
+          "actions": [
+            {
+              "label": "Ver",
+              "action": {
+                "type": "minecraft:dynamic/run_command",
+                "template": "/give $(p) $(item) $(amt)"
+              }
+            }
+          ],
+          "can_close_with_escape": true,
+          "pause": true
+        }
+      }
+    },
+    {
+      "label": "Hava / Zaman",
+      "action": {
+        "type": "minecraft:show_dialog",
+        "dialog": {
+          "type": "minecraft:multi_action",
+          "title": "Hava & Zaman Kontrolü",
+          "actions": [
+            {
+              "label": "Güneş Yap",
+              "action": {
+                "type": "minecraft:run_command",
+                "command": "/time set day"
+              }
+            },
+            {
+              "label": "Gece Yap",
+              "action": {
+                "type": "minecraft:run_command",
+                "command": "/time set night"
+              }
+            },
+            {
+              "label": "Yağmur Yap",
+              "action": {
+                "type": "minecraft:run_command",
+                "command": "/weather rain"
+              }
+            },
+            {
+              "label": "Güneşli Yap",
+              "action": {
+                "type": "minecraft:run_command",
+                "command": "/weather clear"
+              }
+            }
+          ],
+          "can_close_with_escape": true,
+          "pause": true
+        }
+      }
+    },
+    {
+      "label": "Teleport Menüsü",
+      "action": {
+        "type": "minecraft:show_dialog",
+        "dialog": {
+          "type": "minecraft:multi_action",
+          "title": "Teleport Menüsü",
+          "inputs": [
+            {
+              "type": "minecraft:text",
+              "key": "p1",
+              "label": "Gönderen Player"
+            },
+            {
+              "type": "minecraft:text",
+              "key": "p2",
+              "label": "Hedef Player"
+            }
+          ],
+          "actions": [
+            {
+              "label": "Teleport Et",
+              "action": {
+                "type": "minecraft:dynamic/run_command",
+                "template": "/tp $(p1) $(p2)"
+              }
+            }
+          ],
+          "can_close_with_escape": true,
+          "pause": true
+        }
+      }
+    },
+    {
+      "label": "Efekt / Parti Menüsü",
+      "action": {
+        "type": "minecraft:show_dialog",
+        "dialog": {
+          "type": "minecraft:multi_action",
+          "title": "Efekt Menüsü",
+          "inputs": [
+            {
+              "type": "minecraft:text",
+              "key": "p",
+              "label": "Player"
+            },
+            {
+              "type": "minecraft:text",
+              "key": "effect",
+              "label": "Effect / ID"
+            },
+            {
+              "type": "minecraft:text",
+              "key": "duration",
+              "label": "Süre (s)"
+            },
+            {
+              "type": "minecraft:text",
+              "key": "level",
+              "label": "Level"
+            }
+          ],
+          "actions": [
+            {
+              "label": "Uygula",
+              "action": {
+                "type": "minecraft:dynamic/run_command",
+                "template": "/effect give $(p) $(effect) $(duration) $(level)"
+              }
+            }
+          ],
+          "can_close_with_escape": true,
+          "pause": true
+        }
+      }
+    },
+    {
+      "label": "Sunucu Mesajları",
+      "action": {
+        "type": "minecraft:show_dialog",
+        "dialog": {
+          "type": "minecraft:multi_action",
+          "title": "Sunucu Mesajları & Broadcast",
+          "inputs": [
+            {
+              "type": "minecraft:text",
+              "key": "msg",
+              "label": "Mesaj"
+            }
+          ],
+          "actions": [
+            {
+              "label": "Broadcast",
+              "action": {
+                "type": "minecraft:dynamic/run_command",
+                "template": "/tellraw @a \"$(msg)\""
+              }
+            }
+          ],
+          "can_close_with_escape": true,
+          "pause": true
+        }
+      }
+    },
+    {
+      "label": "LuckPerms",
+      "action": {
+        "type": "minecraft:show_dialog",
+        "dialog": "custom:lp/main"
+      }
+    },
+    {
+      "label": "Dünya Kontrolü",
+      "action": {
+        "type": "minecraft:show_dialog",
+        "dialog": {
+          "type": "minecraft:multi_action",
+          "title": "Dünya Kontrolü",
+          "actions": [
+            {
+              "label": "Spawnpoint",
+              "action": {
+                "type": "minecraft:run_command",
+                "command": "/setworldspawn"
+              }
+            },
+            {
+              "label": "Border 100",
+              "action": {
+                "type": "minecraft:run_command",
+                "command": "/worldborder set 100"
+              }
+            },
+            {
+              "label": "Border Reset",
+              "action": {
+                "type": "minecraft:run_command",
+                "command": "/worldborder set 60000000"
+              }
+            },
+            {
+              "label": "Save All",
+              "action": {
+                "type": "minecraft:run_command",
+                "command": "/save-all"
+              }
+            }
+          ],
+          "can_close_with_escape": true,
+          "pause": true
+        }
+      }
+    },
+    {
+      "label": "Oyun Modu Değiştirici",
+      "action": {
+        "type": "minecraft:show_dialog",
+        "dialog": {
+          "type": "minecraft:multi_action",
+          "title": "Gamemode Seç",
+          "inputs": [
+            {
+              "type": "minecraft:text",
+              "key": "p",
+              "label": "Player"
+            }
+          ],
+          "actions": [
+            {
+              "label": "Survival",
+              "action": {
+                "type": "minecraft:dynamic/run_command",
+                "template": "/gamemode survival $(p)"
+              }
+            },
+            {
+              "label": "Creative",
+              "action": {
+                "type": "minecraft:dynamic/run_command",
+                "template": "/gamemode creative $(p)"
+              }
+            },
+            {
+              "label": "Adventure",
+              "action": {
+                "type": "minecraft:dynamic/run_command",
+                "template": "/gamemode adventure $(p)"
+              }
+            },
+            {
+              "label": "Spectator",
+              "action": {
+                "type": "minecraft:dynamic/run_command",
+                "template": "/gamemode spectator $(p)"
+              }
+            }
+          ],
+          "can_close_with_escape": true,
+          "pause": true
+        }
+      }
+    },
+    {
+      "label": "Troll",
+      "action": {
+        "type": "minecraft:show_dialog",
+        "dialog": {
+          "type": "minecraft:multi_action",
+          "title": "Troll Menü",
+          "inputs": [
+            {
+              "type": "minecraft:text",
+              "key": "p",
+              "label": "Player"
+            }
+          ],
+          "actions": [
+            {
+              "label": "Lightning",
+              "action": {
+                "type": "minecraft:dynamic/run_command",
+                "template": "/execute at $(p) run summon lightning_bolt"
+              }
+            },
+            {
+              "label": "Explode",
+              "action": {
+                "type": "minecraft:dynamic/run_command",
+                "template": "/execute at $(p) run summon tnt ~ ~ ~ {Fuse:40}"
+              }
+            },
+            {
+              "label": "Launch Up",
+              "action": {
+                "type": "minecraft:dynamic/run_command",
+                "template": "/effect give $(p) levitation 5 5 true"
+              }
+            },
+            {
+              "label": "Spin",
+              "action": {
+                "type": "minecraft:dynamic/run_command",
+                "template": "/tp $(p) ~ ~ ~ ~10 ~"
+              }
+            }
+          ],
+          "can_close_with_escape": true,
+          "pause": true
+        }
+      }
+    },
+    {
+      "label": "Oyuncu Yardımcıları",
+      "action": {
+        "type": "minecraft:show_dialog",
+        "dialog": {
+          "type": "minecraft:multi_action",
+          "title": "Player Utilities",
+          "inputs": [
+            {
+              "type": "minecraft:text",
+              "key": "p",
+              "label": "Player"
+            }
+          ],
+          "actions": [
+            {
+              "label": "Heal",
+              "action": {
+                "type": "minecraft:dynamic/run_command",
+                "template": "/effect give $(p) instant_health 1 10"
+              }
+            },
+            {
+              "label": "Feed",
+              "action": {
+                "type": "minecraft:dynamic/run_command",
+                "template": "/effect give $(p) saturation 1 10"
+              }
+            },
+            {
+              "label": "Clear Inv",
+              "action": {
+                "type": "minecraft:dynamic/run_command",
+                "template": "/clear $(p)"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}
