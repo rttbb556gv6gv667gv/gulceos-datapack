@@ -1,0 +1,1 @@
+$tellraw $(player) {"text":"$(text)"}
