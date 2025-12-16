@@ -11,7 +11,6 @@ execute unless entity @s[tag=op] run function custom:permissions/player/init
 execute unless entity @s[tag=Owner] run function custom:permissions/player/init
 execute unless entity @s[tag=mod] run function custom:permissions/player/init
 execute unless entity @s[tag=Builder] run function custom:permissions/player/init
-function gu:zzz/load
 
 me §b[GulceOS] §aData Pack Loaded
 data modify storage custom:storage Starter set value {"type":"done"}
