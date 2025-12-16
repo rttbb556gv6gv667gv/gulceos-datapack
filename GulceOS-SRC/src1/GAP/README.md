@@ -1,0 +1,2 @@
+# GulceOS
+## Zorunlu Data Klasörü
