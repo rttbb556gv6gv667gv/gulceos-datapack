@@ -1,0 +1,1 @@
+effect give @a minecraft:slowness 99999 255 true

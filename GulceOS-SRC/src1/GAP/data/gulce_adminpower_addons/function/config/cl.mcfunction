@@ -1,0 +1,11 @@
+kill @e[type=minecraft:item]
+kill @e[type=minecraft:arrow]
+kill @e[type=minecraft:trident]
+kill @e[type=minecraft:tnt]
+kill @e[type=minecraft:zombie]
+kill @e[type=minecraft:egg]
+kill @e[type=minecraft:minecart]
+kill @e[type=minecraft:command_block_minecart]
+kill @e[type=minecraft:tnt_minecart]
+kill @e[type=minecraft:slime]
+$schedule function gulce_adminpower_addons:config/cl $(cl_second)
