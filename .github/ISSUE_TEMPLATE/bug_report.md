@@ -9,40 +9,27 @@ assignees: ''
 ---
 
 ## 📌 Hata Özeti
-
-Hata kısa ve net şekilde ne?
+<!-- Hata kısa ve net şekilde ne? -->
 
 ## 🧩 Datapack Bilgileri
-
-* Datapack adı:
-* Sürüm:
-* Minecraft sürümü:
-* Tek oyunculu / Sunucu / Realms:
-* Sunucu yazılımı (varsa):
+- Datapack adı:
+- Sürüm:
+- Minecraft sürümü:
+- Ortam (Tek oyunculu / Sunucu / Realms):
+- Sunucu yazılımı (varsa):
 
 ## 🔁 Hata Nasıl Tekrar Edilir?
-
 1.
 2.
 3.
 
 ## 🎯 Beklenen Davranış
-
-Ne olmasını bekliyordun?
+<!-- Ne olmasını bekliyordun? -->
 
 ## 💥 Gerçekleşen Davranış
-
-Ne oldu?
+<!-- Ne oldu? -->
 
 ## 📜 Hata Çıktıları / Log
-
-```
+```text
 /reload çıktısı
 console hatası
-```
-
-## 📎 Ek Bilgiler
-
-* Başka datapack'ler:
-* Kaynak paketi kullanılıyor mu:
-* World tipi (flat, default, custom):
