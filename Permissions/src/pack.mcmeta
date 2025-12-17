@@ -1,16 +1,12 @@
 {
   "pack": {
     "description": "§b§lGULCE Admin Power §r§7v1.0.0\n§eGelişmiş İzin ve Eylem Yönetim Sistemi",
+    "pack_format": 81,
     "supported_formats": [
       81,
       95
     ],
     "min_format": 81,
     "max_format": 95
-  },
-  "features": {
-    "enabled": [
-      "minecraft:vanilla"
-    ]
   }
 }
