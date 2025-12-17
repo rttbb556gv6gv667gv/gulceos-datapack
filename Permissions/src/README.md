@@ -1,64 +1,82 @@
-# GULCE Admin Power – Beni Oku
+## 🧾 GULCE Admin Power — Kullanım ve Sistem Onay Formu
 
-Bu datapack, vanilla Minecraft için geliştirilmiş gelişmiş izin ve eylem yönetim sistemidir.
-Mod gerekmez. Komut blokları gerekmez. Klasik /op karmaşasına alternatif olarak tasarlanmıştır.
+> Bu form, datapack’in **bilinçli ve doğru** şekilde kullanıldığını belgelemek amacıyla hazırlanmıştır.
 
-Pack açıklaması (pack.mcmeta) zaten özeti verir:
-GULCE Admin Power v1.0.0 – Gelişmiş İzin ve Eylem Yönetim Sistemi
+---
 
-# 📁 Kurulum Şekli (Önemli)
+### 📌 Genel Bilgiler
 
-Bu datapack ZIP olarak değil, klasör yapısı korunarak yüklenmelidir.
+* [ ] Datapack adını okudum (**src**)
+* [ ] Sürüm bilgisini kontrol ettim (**v1.0.0**)
+* [ ] Datapack’in bana ait olup olmadığını biliyorum
+* [ ] Bu pack’in vanilla Minecraft için yazıldığını anladım
 
-Repo içeriği şu mantıkla hazırlanmıştır:
+---
 
-src/
-└── GULCE_Admin_Power/
-    ├── pack.mcmeta
-    └── data/
-        └── ...
+### 📁 Kurulum Onayı
 
-# Doğru Kurulum
+Aşağıdaki maddelerin **tamamı doğruysa** işaretleyin:
 
-src/ klasörü içindeki datapack klasörünü alın
+* [ ] Datapack’i **ZIP olarak yüklemedim**
+* [ ] Klasör yapısını bozmadan yükledim
+* [ ] `pack.mcmeta` dosyası kök dizinde bulunuyor
+* [ ] Datapack yolu şu şekildedir:
 
-Sunucunuzun veya dünyanızın:
+```
+world/datapacks/GULCE_Admin_Power/
+```
 
-world/datapacks/
+* [ ] Oyunda `/reload` komutunu çalıştırdım
+* [ ] Yükleme sırasında hata mesajı almadım
 
+---
 
-dizinine klasör olarak kopyalayın
+### 🎮 Uyumluluk Kontrolü
 
-## Oyunda:
+* [ ] Minecraft sürümüm **1.21.10**
+* [ ] Pack format **88**
+* [ ] Vanilla sunucu kullanıyorum
+* [ ] Realms kullanıyorsam vanilla sınırlarında kaldığımı biliyorum
+* [ ] Modlu sunucularda çalışmayacağını kabul ediyorum
 
-/reload
+---
 
+### 🔐 Yetki ve Güvenlik Bilinci
 
-komutunu çalıştırın
+* [ ] `/op` sistemine alternatif olarak tasarlandığını biliyorum
+* [ ] GUI’lerin yetki vermediğini anladım
+* [ ] Yetkilerin merkezi bir yapıdan kontrol edildiğini biliyorum
+* [ ] Admin eylemlerinin oyuncu etkileşiminden izole edildiğini kabul ediyorum
+* [ ] “Kolaylık” yerine “kontrol” hedeflendiğini anladım
 
-ZIP’e çevirmenize gerek yoktur.
-Klasör yapısı bozulursa datapack yüklenmez.
+---
 
-# 🎮 Uyumluluk
+### ⚙️ Teknik Altyapı Bilgisi
 
-Minecraft sürümü: pack format 88 (1.21.10)
+* [ ] Macro sisteminin aktif kullanıldığını biliyorum
+* [ ] Storage yapısının sistem için zorunlu olduğunu biliyorum
+* [ ] Performansın tick-safe olacak şekilde tasarlandığını anladım
+* [ ] Sistemi kurcalarken vanilla sınırlarını aşmamam gerektiğini biliyorum
 
-Vanilla uyumlu
+---
 
-Realms uyumlu
+### 🚫 Bilinçli Olarak Desteklenmeyen Durumlar
 
-Modlu sunucular desteklenmez
+Aşağıdakilerin **desteklenmediğini** kabul ediyorum:
 
-Belirtilen sürüm dışında çalışması garanti edilmez.
+* [ ] Modlu sunucular
+* [ ] Farklı Minecraft sürümleri
+* [ ] Otomatik yetki yükseltme sistemleri
+* [ ] Gizli yetkilendirme / arka kapı beklentisi
 
-⚙️ Sistem Mantığı (Kısa)
+---
 
-Yetkiler merkezi bir yapıdan yönetilir
+### ✅ Kullanıcı Beyanı
 
-GUI sistemleri yalnızca arayüzdür, yetki vermez
+* [ ] Bu datapack’i **kendi sorumluluğumda** kullandığımı kabul ediyorum
+* [ ] Hatalı kurulumdan doğan sorunların bana ait olduğunu biliyorum
+* [ ] Sistemin bilinçli olarak kısıtlayıcı tasarlandığını kabul ediyorum
+* [ ] README ve belgeleri okuduğumu beyan ediyorum
 
-Admin eylemleri oyuncu etkileşiminden izole edilmiştir
-
-Macro + storage yapısı ile performans odaklıdır
-
-Bu datapack “kolay olsun” diye değil, kontrollü ve güvenli olsun diye yazılmıştır.
+**Kullanan Kişi:** `________________________`
+**Tarih:** `____ / ____ / ______`
