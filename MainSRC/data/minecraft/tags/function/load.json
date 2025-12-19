@@ -1,6 +1,7 @@
 {
   "values": [
     "custom_admin:load",
+    "custom_admin:handler/load",
     "glc_menu:handler/load"
   ]
 }
