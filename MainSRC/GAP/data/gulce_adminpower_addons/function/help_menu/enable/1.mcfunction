@@ -1,0 +1,1 @@
+$scoreboard players enable @a[tag=$(tag)] ap_help-menu
