@@ -1,5 +1,6 @@
 {
   "values": [
-    "custom_admin:handler/loop/all/1"
+    "custom_admin:handler/loop/all/1",
+    "function glc_menu:handler/tick"
   ]
 }
