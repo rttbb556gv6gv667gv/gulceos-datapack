@@ -1,0 +1,1 @@
+$give $(Player) $(Item)[$(Components)] $(Count)

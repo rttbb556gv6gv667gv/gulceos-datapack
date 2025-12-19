@@ -1,0 +1,365 @@
+{
+  "type": "minecraft:multi_action",
+  "title": "LuckPerms GUI",
+  "can_close_with_escape": true,
+  "pause": false,
+  "actions": [
+    {
+      "label": "Permissions",
+      "action": {
+        "type": "minecraft:show_dialog",
+        "dialog": {
+          "type": "minecraft:multi_action",
+          "title": "LP-GUI Perms",
+          "inputs": [
+            {
+              "type": "minecraft:text",
+              "key": "u",
+              "label": "Player",
+              "max_length": 50
+            },
+            {
+              "type": "minecraft:text",
+              "key": "per",
+              "label": "Permission",
+              "max_length": 9000
+            },
+            {
+              "type": "minecraft:boolean",
+              "key": "st",
+              "label": "State",
+              "on_true": "true",
+              "on_false": "false"
+            }
+          ],
+          "can_close_with_escape": true,
+          "pause": true,
+          "columns": 1,
+          "actions": [
+            {
+              "label": "Apply",
+              "action": {
+                "type": "minecraft:dynamic/run_command",
+                "template": "/lp user $(u) permission set $(per) $(st)"
+              }
+            },
+            {
+              "label": "Info",
+              "action": {
+                "type": "minecraft:dynamic/run_command",
+                "template": "/lp user $(u) info"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "label": "Groups",
+      "action": {
+        "type": "minecraft:show_dialog",
+        "dialog": {
+          "type": "minecraft:multi_action",
+          "title": "LP-GUI Groups",
+          "inputs": [
+            {
+              "type": "minecraft:text",
+              "key": "g",
+              "label": "Group"
+            },
+            {
+              "type": "minecraft:text",
+              "key": "per",
+              "label": "Permission",
+              "max_length": 5000
+            },
+            {
+              "type": "minecraft:boolean",
+              "key": "st",
+              "label": "State",
+              "on_true": "true",
+              "on_false": "false"
+            }
+          ],
+          "can_close_with_escape": true,
+          "pause": true,
+          "actions": [
+            {
+              "label": "Give Permission",
+              "action": {
+                "type": "minecraft:dynamic/run_command",
+                "template": "/lp group $(g) permission set $(per) $(st)"
+              }
+            },
+            {
+              "label": "Group Info",
+              "action": {
+                "type": "minecraft:dynamic/run_command",
+                "template": "/lp group $(g) info"
+              }
+            },
+            {
+              "label": "Set Prefix",
+              "action": {
+                "type": "minecraft:dynamic/run_command",
+                "template": "/lp group $(g) meta setprefix [$(g)]"
+              }
+            },
+            {
+              "label": "Remove Prefix",
+              "action": {
+                "type": "minecraft:dynamic/run_command",
+                "template": "/lp group $(g) meta unsetprefix"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "label": "User ↔ Group",
+      "action": {
+        "type": "minecraft:show_dialog",
+        "dialog": {
+          "type": "minecraft:multi_action",
+          "title": "LP-GUI User-Group",
+          "inputs": [
+            {
+              "type": "minecraft:text",
+              "key": "u",
+              "label": "Player"
+            },
+            {
+              "type": "minecraft:text",
+              "key": "g",
+              "label": "Group"
+            }
+          ],
+          "can_close_with_escape": true,
+          "pause": true,
+          "actions": [
+            {
+              "label": "Add to Group",
+              "action": {
+                "type": "minecraft:dynamic/run_command",
+                "template": "/lp user $(u) parent add $(g)"
+              }
+            },
+            {
+              "label": "Remove from Group",
+              "action": {
+                "type": "minecraft:dynamic/run_command",
+                "template": "/lp user $(u) parent remove $(g)"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "label": "Tracks",
+      "action": {
+        "type": "minecraft:show_dialog",
+        "dialog": {
+          "type": "minecraft:multi_action",
+          "title": "LP-GUI Tracks",
+          "inputs": [
+            {
+              "type": "minecraft:text",
+              "key": "t",
+              "label": "Track"
+            },
+            {
+              "type": "minecraft:text",
+              "key": "g",
+              "label": "Group"
+            },
+            {
+              "type": "minecraft:boolean",
+              "key": "act",
+              "label": "Action",
+              "on_true": "add",
+              "on_false": "remove"
+            }
+          ],
+          "can_close_with_escape": true,
+          "pause": true,
+          "actions": [
+            {
+              "label": "Execute",
+              "action": {
+                "type": "minecraft:dynamic/run_command",
+                "template": "/lp track $(t) $(act) $(g)"
+              }
+            },
+            {
+              "label": "Track Info",
+              "action": {
+                "type": "minecraft:dynamic/run_command",
+                "template": "/lp track $(t) info"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "label": "Parents",
+      "action": {
+        "type": "minecraft:show_dialog",
+        "dialog": {
+          "type": "minecraft:multi_action",
+          "title": "LP-GUI Parents",
+          "inputs": [
+            {
+              "type": "minecraft:text",
+              "key": "u",
+              "label": "Player"
+            },
+            {
+              "type": "minecraft:text",
+              "key": "g",
+              "label": "Parent Group"
+            },
+            {
+              "type": "minecraft:boolean",
+              "key": "act",
+              "label": "Action",
+              "on_true": "add",
+              "on_false": "remove"
+            }
+          ],
+          "can_close_with_escape": true,
+          "pause": true,
+          "actions": [
+            {
+              "label": "Execute",
+              "action": {
+                "type": "minecraft:dynamic/run_command",
+                "template": "/lp user $(u) parent $(act) $(g)"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "label": "Meta",
+      "action": {
+        "type": "minecraft:show_dialog",
+        "dialog": {
+          "type": "minecraft:multi_action",
+          "title": "LP-GUI Meta",
+          "inputs": [
+            {
+              "type": "minecraft:text",
+              "key": "t",
+              "label": "Target Player/Group"
+            },
+            {
+              "type": "minecraft:text",
+              "key": "key",
+              "label": "Meta Key (prefix/suffix/other)"
+            },
+            {
+              "type": "minecraft:text",
+              "key": "val",
+              "label": "Value"
+            }
+          ],
+          "can_close_with_escape": true,
+          "pause": true,
+          "actions": [
+            {
+              "label": "Set Meta",
+              "action": {
+                "type": "minecraft:dynamic/run_command",
+                "template": "/lp $(t) meta set $(key) $(val)"
+              }
+            },
+            {
+              "label": "Unset Meta",
+              "action": {
+                "type": "minecraft:dynamic/run_command",
+                "template": "/lp $(t) meta unset $(key)"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "label": "Verbose",
+      "action": {
+        "type": "minecraft:show_dialog",
+        "dialog": {
+          "type": "minecraft:multi_action",
+          "title": "LP-GUI Verbose",
+          "inputs": [
+            {
+              "type": "minecraft:single_option",
+              "key": "ac",
+              "label": "",
+              "label_visible": false,
+              "options": [
+                {
+                  "id": "on",
+                  "display": "On"
+                },
+                {
+                  "id": "record",
+                  "display": "Record"
+                },
+                {
+                  "id": "upload",
+                  "display": "Upload"
+                },
+                {
+                  "id": "off",
+                  "display": "Off"
+                }
+              ]
+            }
+          ],
+          "can_close_with_escape": true,
+          "pause": true,
+          "actions": [
+            {
+              "label": "Set Verbose Mode",
+              "action": {
+                "type": "minecraft:dynamic/run_command",
+                "template": "/lp verbose $(ac)"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "label": "Search",
+      "action": {
+        "type": "minecraft:show_dialog",
+        "dialog": {
+          "type": "minecraft:multi_action",
+          "title": "LP-GUI Search",
+          "inputs": [
+            {
+              "type": "minecraft:text",
+              "key": "ac",
+              "label": "Search Permission"
+            }
+          ],
+          "actions": [
+            {
+              "label": "Search",
+              "action": {
+                "type": "minecraft:dynamic/run_command",
+                "template": "/lp search $(ac)"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}
