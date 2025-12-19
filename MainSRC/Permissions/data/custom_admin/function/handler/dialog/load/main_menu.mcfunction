@@ -1,0 +1,7 @@
+# ═══════════════════════════════════════════════════
+# Load Main Menu
+# ═══════════════════════════════════════════════════
+
+dialog show @p[tag=gulce_admin,predicate=custom_admin:ui] {"type":"minecraft:multi_action","title":{"text":"⚙️ GULCE ","extra":[{"text":"- ","color":"yellow","bold":true,"italic":false},{"text":"Admin Power ","color":"green","bold":true,"italic":false},{"text":"Kontrol Paneli","color":"gold","bold":true,"italic":false}],"color":"aqua","bold":true,"italic":false},"body":{"type":"minecraft:plain_message","contents":"⚡ Hoşgeldin! Panelden araçları seçebilirsin.\n\n📝 İzin yönetimi, yardım ve hakkında menüleri."},"can_close_with_escape":true,"pause":false,"actions":[{"label":"🔐 İzin Yönetimi","action":{"type":"minecraft:run_command","command":"/trigger gulce_trigger set 2"}},{"label":"❓ Yardım","action":{"type":"minecraft:run_command","command":"/trigger gulce_trigger set 3"}},{"label":"ℹ️ Hakkında","action":{"type":"minecraft:run_command","command":"/trigger gulce_trigger set 4"}}]}
+
+tellraw @a[tag=gulce_admin] ["",{"text":"[GULCE] ","color":"gold","bold":true},{"text":"Ana menü yüklendi.","color":"gray"}]
