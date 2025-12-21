@@ -1,0 +1,15 @@
+[
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:consumable": {
+        "has_consume_particles": true
+      },
+      "minecraft:food": {
+        "nutrition": 20,
+        "saturation": 20,
+        "can_always_eat": true
+      }
+    }
+  }
+]

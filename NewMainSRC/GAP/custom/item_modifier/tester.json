@@ -1,0 +1,16 @@
+[
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:custom_name": {
+        "text": "Test Başarılı",
+        "color": "#1ce333",
+        "bold": true,
+        "italic": false
+      },
+      "minecraft:custom_data": {
+        "tester": true
+      }
+    }
+  }
+]

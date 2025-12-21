@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:dialog_list",
+  "title": {
+    "text": "Alt Menüler",
+    "color": "#ace335",
+    "bold": true,
+    "italic": false
+  },
+  "can_close_with_escape": true,
+  "pause": false,
+  "dialogs": [
+    "actions:gui",
+    "admin:run",
+    "admin:gui",
+    "minecraft:custom_options",
+    "minecraft:quick_actions",
+    "minecraft:server_links"
+  ]
+}
