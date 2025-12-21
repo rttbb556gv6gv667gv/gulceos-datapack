@@ -1,0 +1,40 @@
+{
+  "pack": {
+    "type": "minecraft:datapack",
+    "pack_format": 88,
+    "description": "GulceOS-Core by Legends11",
+    "supported_formats": [
+      81,
+      99999
+    ],
+    "min_format": 81,
+    "max_format": 99999
+  },
+  "features": {
+    "enabled": [
+      "minecraft:vanilla"
+    ]
+  },
+  "overlays": {
+    "entries": [
+      {
+        "directory": "GAP",
+        "formats": [
+          81,
+          99999
+        ],
+        "min_format": 81,
+        "max_format": 99999
+      },
+      {
+        "directory": "Permissions",
+        "formats": [
+          81,
+          99999
+        ],
+        "min_format": 81,
+        "max_format": 99999
+      }
+    ]
+  }
+}
