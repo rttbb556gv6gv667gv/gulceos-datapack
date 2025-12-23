@@ -1,4 +1,4 @@
-# 🛡️ GulceOS Datapack (Official Repository)
+# GulceOS – Minecraft 1.21.7+ Vanilla Datapack
 
 ![Security Status](https://img.shields.io/badge/Security-Stable-green.svg)
 ![License](https://img.shields.io/badge/License-MIT-blue.svg)
