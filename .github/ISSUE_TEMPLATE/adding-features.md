@@ -1,8 +1,8 @@
 ---
-name: Güvenlik açığı açıklaması
+name: Adding Features
 about: Vanilla datapack için yeni özellik ve sistem önerileri.
-title: ''
-labels: ''
+title: "[Feature]"
+labels: enhancement
 assignees: rttbb556gv6gv667gv
 
 ---

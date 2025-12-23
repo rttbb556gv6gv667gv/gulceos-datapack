@@ -2,9 +2,9 @@
 name: Bug report
 about: Minecraft datapack için hata bildirimi. /reload çıktısı ve tekrar adımları
   zorunludur.
-title: ''
+title: "[Bug]"
 labels: ''
-assignees: ''
+assignees: rttbb556gv6gv667gv
 
 ---
 
