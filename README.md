@@ -1,5 +1,11 @@
 # GulceOS – Minecraft 1.21.7+ Vanilla Datapack
 
+
+<p align="center">
+  <img src="images/banner.png" width="200">
+</p>
+
+
 ![Security Status](https://img.shields.io/badge/Security-Stable-green.svg)
 ![License](https://img.shields.io/badge/License-MIT-blue.svg)
 ![Minecraft](https://img.shields.io/badge/Minecraft-Vanilla_Support-green.svg)
