@@ -2,34 +2,29 @@ Bu proje ücretsiz ve açık kaynaklıdır. Destek sınırları aşağıda açı
 
 # Destek Kanalları
 
-GitHub Issues: Hata bildirimi ve teknik problemler
+- **GitHub Issues:** Hata bildirimi ve teknik problemler  
+- **Pull Request:** Düzeltme veya geliştirme önerileri  
 
-Pull Request: Düzeltme veya geliştirme önerileri
+> Özel mesaj, DM veya kişisel destek sağlanmaz.
 
-Özel mesaj, DM veya kişisel destek sağlanmaz.
+## Issue Açmadan Önce
 
-Issue Açmadan Önce
+Lütfen şunları kontrol edin:  
 
-Lütfen şunları kontrol edin:
+- README ve belgeler  
+- Mevcut açık/kapalı issue'lar  
+- Minecraft sürüm uyumluluğu  
 
-README ve belgeler
+> Eksik bilgi içeren issue'lar kapatılabilir.
 
-Mevcut açık/kapalı issue'lar
+## Destek Verilmeyen Durumlar
 
-Minecraft sürüm uyumluluğu
-
-Eksik bilgi içeren issue'lar kapatılabilir.
-
-Destek Verilmeyen Durumlar
-
-Modlu sunucular
-
-Datapack çakışmalarından doğan sorunlar
-
-Kişiye özel sunucu yapılandırmaları
+- Modlu sunucular  
+- Datapack çakışmalarından doğan sorunlar  
+- Kişiye özel sunucu yapılandırmaları
 
 # Beklentiler
 
-Bu proje "olduğu gibi" sunulur. Kritik hatalar ele alınır; ancak her kullanım senaryosu için garanti verilmez.
+Bu proje "olduğu gibi" sunulur. Kritik hatalar ele alınır; ancak her kullanım senaryosu için garanti verilmez.  
 
-Amaç destek vermek değil, sağlam bir temel sunmaktır.
+> Amaç destek vermek değil, sağlam bir temel sunmaktır.
