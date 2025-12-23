@@ -1,27 +1,29 @@
 # 🛡️ GulceOS Datapack (Official Repository)
 
-![Security Status](https://img.shields.io/badge/Security-High_Alert-red.svg)
+![Security Status](https://img.shields.io/badge/Security-Stable-green.svg)
+![License](https://img.shields.io/badge/License-MIT-blue.svg)
 ![Minecraft](https://img.shields.io/badge/Minecraft-Vanilla_Support-green.svg)
 
-Sunucu içi yönetim araçları ve özel sistemler içeren, yüksek güvenlik öncelikli Minecraft yönetim projesi.
+Sunucu içi yönetim araçları ve özel sistemler içeren Minecraft yönetim projesi.
 
 ---
 
-## 🚫 KRİTİK GÜVENLİK VE LİSANS UYARISI
+## 📜 Lisans Bilgisi
 
-> [!CAUTION]
-> **DİKKAT:** Devam eden siber güvenlik riskleri ve **hacker olayları nedeniyle** bu proje şu an için **LİSANSLANMAMIŞTIR.**
-> 
-> * Kodun kopyalanması, dağıtılması veya izinsiz kullanımı, güvenlik süreci tamamlanana kadar **KESİNLİKLE YASAKTIR.**
-> * Proje sahibi dışında hiç kimse bu kod üzerinde hak iddia edemez veya yeniden yayınlayamaz.
-> * Oluşabilecek yazılımsal sorunlardan geliştirici sorumlu değildir.
+> [!TIP]
+> Bu proje **MIT Lisansı** ile lisanslanmıştır. Bu, kodun özgürce kullanılabileceği ancak orijinal telif hakkı ve lisans bildiriminin dahil edilmesi gerektiği anlamına gelir.
+
+* **Lisans:** [MIT License](https://opensource.org/licenses/MIT)
+* Proje sahibi dışında hiç kimse bu kod üzerinde haksız hak iddia edemez.
+* Proje olduğu gibi sunulur; oluşabilecek yazılımsal sorunlardan geliştirici sorumlu değildir.
 
 ---
 
 ## ⚠️ Yasal Bilgilendirme
 * **Resmî Durum:** Bu proje bir Mojang/Microsoft ürünü değildir.
 * **Kapsam:** Yönetim menüleri ve yardımcı komutlar sunucu yapılandırmasına bağlıdır.
-* **Kullanım:** Bu proje genel dağıtım için değil, özel sunucu bakımı ve hata düzeltmeleri odaklı geliştirilmektedir.
+* **Kullanım:** Sunucu bakımı ve hata düzeltmeleri odaklı geliştirilmektedir.
+* **Bağışlar:** Bu proje tamamen ücretsizdir; herhangi bir platform üzerinden bağış toplanmamaktadır.
 
 ---
 
@@ -39,19 +41,19 @@ Proje detaylarına, izinlere ve topluluk kurallarına aşağıdaki bağlantılar
 
 ## 💻 Sistem Gereksinimleri & Uyumluluk
 - **Hedef:** Vanilla Minecraft sunucuları.
-- **Yapılandırma:** Detaylı sürüm uyumluluğu için yukarıdaki `VERSION_SUPPORT` dosyasını inceleyin.
+- **Yapılandırma:** Detaylı sürüm uyumluluğu için yukarıdaki `VERSION_SUPPORT.md` dosyasını inceleyin.
 
 ---
 
-## 🛠️ Kurulum (Sadece Yetkili Kullanıcılar)
+## 🛠️ Kurulum
 
 > [!IMPORTANT]
 > Datapack dosyaları indirdiğiniz ZIP içerisindeki **`SRC`** klasöründe bulunmaktadır.
 
 1. İndirdiğiniz `.zip` dosyasını açın.
-2. İçindeki **`SRC`** klasörünün içeriğini (data klasörü ve pack.mcmeta dosyası) kopyalayın.
+2. İçindeki **`SRC`** klasörünün içeriğini (`data` klasörü ve `pack.mcmeta` dosyası) kopyalayın.
 3. Sunucunuzdaki `world/datapacks/GulceOS` (klasör oluşturun) içerisine yerleştirin.
 4. Oyun içinde `/reload` komutunu çalıştırın.
 
 ---
-_Bu proje, güvenlik olayları sona erene kadar geliştirici koruması altındadır._
+_Proje topluluk desteği ve açık kaynak vizyonuyla geliştirilmeye devam etmektedir._
