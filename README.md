@@ -48,8 +48,6 @@ Proje detaylarına, izinlere ve topluluk kurallarına aşağıdaki bağlantılar
 ## 💻 Sistem Gereksinimleri & Uyumluluk
 - **Hedef:** Vanilla Minecraft sunucuları.
 - **Yapılandırma:** Detaylı sürüm uyumluluğu için yukarıdaki `VERSION_SUPPORT.md` dosyasını inceleyin.
-- **Minimum RAM**: 4 GB
-> Minecraft 1.21.x ve modern datapack sistemleri için 4 GB RAM altı yapılandırmalar önerilmez.
 
 ---
 
