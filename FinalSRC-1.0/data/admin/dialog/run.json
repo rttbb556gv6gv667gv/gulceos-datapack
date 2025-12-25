@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:notice",
+  "title": "",
+  "body": {
+    "type": "minecraft:plain_message",
+    "contents": [
+      [
+        "\n\n\n\n\n404",
+        {
+          "text": "\n\n\n\n\n\nBulunamadı!\n\n\n\n"
+        }
+      ]
+    ]
+  },
+  "can_close_with_escape": true,
+  "pause": false,
+  "action": {
+    "label": "Tamam",
+    "action": {
+      "type": "minecraft:run_command",
+      "command": "/dialog clear @s"
+    }
+  }
+}
