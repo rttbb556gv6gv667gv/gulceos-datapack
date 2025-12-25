@@ -14,4 +14,5 @@ function custom_admin:group/check
 function custom_admin:handler/timer
 
 # Cooldown azaltma
-scoreboard players remove @a[scores={gulce_cooldown=1..}] gulce_cooldown 1
+
+execute if predicate custom_admin:cooldown if score @s gulce_cooldown matches 1.. run scoreboard players remove @s gulce_cooldown 1
