@@ -1,0 +1,18 @@
+{
+  "criteria": {
+    "right_click": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": "minecraft:echo_shard",
+          "predicates": {
+            "minecraft:custom_data": "{permission:\"legendspower.admin_tool\",Actions:[{\"type\":{\"right_click\":\"true\"},\"action\":{\"type\":\"run_function\",\"value\":\"actions:menu/open\"}}]}"
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "actions:menu/open"
+  }
+}
