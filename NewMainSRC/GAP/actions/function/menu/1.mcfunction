@@ -1,1 +1,0 @@
-$dialog show $(Selector)[$(Unless)] actions:gui

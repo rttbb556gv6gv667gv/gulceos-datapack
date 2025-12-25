@@ -1,1 +1,0 @@
-$trigger gulce_menu set $(ui)

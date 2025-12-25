@@ -1,2 +1,0 @@
-$effect give $(Player) $(Effect) $(Duration) $(Amplifier) $(HideParticles)
-$data modify storage userfunc:log actions set value {"player":"$(Player)","effect":"$(Effect)","duration":"$(Duration)","amplifier":"$(Amplifier)","hideParticles":"$(HideParticles)"}

@@ -1,1 +1,0 @@
-function actions:open_gui with storage custom:menu/1

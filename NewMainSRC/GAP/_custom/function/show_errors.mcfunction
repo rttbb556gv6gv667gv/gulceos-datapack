@@ -1,3 +1,0 @@
-tellraw @s [{"text":"Log: \n\n-----------------------------------------------------\n","color":"gold"},{"storage":"custom:storage","nbt":"Log.errors"},"\n-----------------------------------------------------"]
-tellraw @s {"text":"Tıkla ve Chat Temizle","click_event":{"action":"run_command","command":"/function _custom:clear_chat"},"color":"green","bold":1b}
-playsound minecraft:entity.player.levelup player @s ~ ~ ~ 5 2 1

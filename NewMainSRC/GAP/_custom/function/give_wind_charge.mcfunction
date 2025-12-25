@@ -1,1 +1,0 @@
-give @a[gamemode=survival] minecraft:wind_charge 64

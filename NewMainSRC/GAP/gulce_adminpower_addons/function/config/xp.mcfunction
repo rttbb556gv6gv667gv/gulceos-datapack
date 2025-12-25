@@ -1,1 +1,0 @@
-$xp $(action) @s $(xp)

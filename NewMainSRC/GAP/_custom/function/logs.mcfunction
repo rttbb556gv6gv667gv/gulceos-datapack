@@ -1,3 +1,0 @@
-dialog show @s {  "type": "minecraft:multi_action",  "title": "Sunucu Paneli",  "body": {    "type": "minecraft:plain_message",    "contents": "İzleme seçeneklerini seç:"  },  "can_close_with_escape": true,  "pause": false,  "actions": [    {      "label": "Hatalar",      "action": {        "type": "minecraft:run_command",        "command": "/function _custom:show_errors"      }    },    {      "label": "Başarılar",      "action": {        "type": "minecraft:run_command",        "command": "function _custom:show_log"      }    },    {      "label": "Kapat",      "action": {        "type": "minecraft:suggest_command",        "command": " "      }    }  ]}
-
-playsound minecraft:entity.player.levelup player @s ~ ~ ~ 5 2
