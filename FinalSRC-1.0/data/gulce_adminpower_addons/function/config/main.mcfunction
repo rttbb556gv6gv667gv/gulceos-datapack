@@ -1,0 +1,1 @@
+$function gulce_adminpower_addons:main {load:"$(load)"}

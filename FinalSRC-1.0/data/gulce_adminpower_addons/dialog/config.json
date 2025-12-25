@@ -1,0 +1,131 @@
+{
+  "type": "minecraft:multi_action",
+  "title": "Gulce AdminPower - Konfigürasyon Yükle",
+  "inputs": [
+    {
+      "type": "minecraft:number_range",
+      "key": "load_second",
+      "label": "Yükleme Süresi (saniye)",
+      "start": 1,
+      "end": 100,
+      "step": 1,
+      "initial": 50
+    },
+    {
+      "type": "minecraft:number_range",
+      "key": "loop",
+      "label": "Döngü Süresi (saniye)",
+      "start": 1,
+      "end": 100,
+      "step": 1,
+      "initial": 50
+    },
+    {
+      "type": "text",
+      "key": "DisplayRules",
+      "label": "Kuralları Gösterilecek Oyuncu",
+      "initial": "@a"
+    },
+    {
+      "type": "minecraft:number_range",
+      "key": "cl_second",
+      "label": "Temizleme Süresi (saniye)",
+      "start": 1,
+      "end": 100,
+      "step": 1,
+      "initial": 50
+    },
+    {
+      "type": "minecraft:single_option",
+      "key": "diamond_to_emerald_recipe",
+      "label": "Elmas→Zümrüt Tarif Modu",
+      "options": [
+        {
+          "id": "take",
+          "display": "Kapalı"
+        },
+        {
+          "id": "give",
+          "display": "Açık"
+        }
+      ]
+    },
+    {
+      "type": "minecraft:single_option",
+      "key": "level",
+      "label": "İzin Seviyesi",
+      "options": [
+        {
+          "id": "1"
+        },
+        {
+          "id": "2"
+        },
+        {
+          "id": "3"
+        },
+        {
+          "id": "4"
+        },
+        {
+          "id": "5"
+        }
+      ]
+    },
+    {
+      "type": "minecraft:text",
+      "key": "Vers",
+      "label": "Sürüm",
+      "max_length": 1000000
+    },
+    {
+      "type": "minecraft:boolean",
+      "key": "thc",
+      "label": "'/trigger ap_help-menu' Komutu",
+      "on_true": "add",
+      "on_false": "remove"
+    }
+  ],
+  "can_close_with_escape": true,
+  "pause": false,
+  "after_action": "none",
+  "columns": 6,
+  "actions": [
+    {
+      "label": "Yükle",
+      "tooltip": "Bu Buton Konfigürasyonu Yükler",
+      "width": 40,
+      "action": {
+        "type": "minecraft:dynamic/run_command",
+        "template": "/function gulce_adminpower_addons:config/load {\"load_second\":\"$(load_second)\",\"loop\":\"$(loop)\",\"DisplayRules\":\"$(DisplayRules)\",\"cl_second\":\"$(cl_second)\",\"diamond_to_emerald_recipe\":\"$(diamond_to_emerald_recipe)\",\"level\":$(level),\"TriggerHelpCommand\":\"$(thc)\"}"
+      }
+    },
+    {
+      "label": "Yeniden Yükle",
+      "tooltip": "Bu Buton DataPack'i Yeniden Yükler",
+      "width": 76,
+      "action": {
+        "type": "minecraft:dynamic/run_command",
+        "template": "/function gulce_adminpower_addons:reload/init {Version:\"$(Vers)\"}"
+      }
+    },
+    {
+      "label": "Kapat",
+      "tooltip": "Bu Buton Menüyü Kapatır",
+      "width": 40,
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "/dialog clear @s"
+      }
+    },
+    {
+      "label": "Dahası",
+      "tooltip": "Bu Buton Daha Fazla Özellik Ekler",
+      "width": 41,
+      "action": {
+        "type": "minecraft:show_dialog",
+        "dialog": "gulce_adminpower_addons:config2"
+      }
+    }
+  ]
+}
