@@ -1,0 +1,12 @@
+{
+  "pack": {
+    "pack_format": 94,
+    "description": "GulceOS-Core by Legends11",
+    "supported_formats": [
+      81,
+      95
+    ],
+    "min_format": 81,
+    "max_format": 95
+  }
+}
