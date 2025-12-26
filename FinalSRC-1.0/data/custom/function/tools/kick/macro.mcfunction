@@ -1,1 +1,1 @@
-kick $(player) §c§l⚠ UZAKLAŞTIRILDINIZ §e§lSEBEP §f$(reason) §b§lKAYIT §f$(date)-$(time) §6§lYETKİLİ §e$(admin) §f§lBİLGİ §7Disiplin ihlali sebebiyle atıldınız. Tekrarı halinde yasaklanacaksınız. §a§l✔ §fTekrar bağlanabilirsiniz, iyi oyunlar dileriz.
+$kick $(player) §c§l⚠ UZAKLAŞTIRILDINIZ §e§lSEBEP §f$(reason) §b§lKAYIT §f$(date)-$(time) §6§lYETKİLİ §e$(admin) §f§lBİLGİ §7Disiplin ihlali sebebiyle atıldınız. Tekrarı halinde yasaklanacaksınız. §a§l✔ §fTekrar bağlanabilirsiniz, iyi oyunlar dileriz.
