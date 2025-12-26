@@ -12,12 +12,13 @@ execute if data storage mc:config {Config:{Enabled:1b}} run return run tellraw @
 # 3. AKTİVASYON
 # Kontrolü geçtiyse sistem kapalıdır, şimdi açıyoruz.
 data modify storage mc:config Config.Enabled set value 1b
-tellraw @s {"text":"[GulceOS] Hazırlanıyor...","color":"yellow"}
+tellraw @a {"text":"[GulceOS] Hazırlanıyor...","color":"yellow"}
 
 # 4. ŞARTLI FONKSİYON TETİKLEME
 # 'execute if' kullanarak verinin başarıyla 1b olduğundan emin olarak çalıştırırız.
 execute if data storage mc:config {Config:{Enabled:1b}} run function main:load/init
 execute if data storage mc:config {Config:{Enabled:1b}} run data merge storage mc:trg {ui:1}
+execute if data storage mc:config {Config:{Enabled:1b}} run function #multicommand:init
 
 # 5. BİTİŞ VE GERİ BİLDİRİM
 # Başarı mesajı sadece işlemler tamamlandığında @a (herkese) gider.
