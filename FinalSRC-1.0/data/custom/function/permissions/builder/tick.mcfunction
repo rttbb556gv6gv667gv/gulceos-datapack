@@ -14,16 +14,18 @@ execute as @a[tag=Builder,scores={ap_gamemode=1}] at @s run gamemode survival @s
 execute as @a[tag=Builder,scores={ap_xp=1}] at @s run xp add @s 10000
 
 # Sıfırla
-scoreboard players set @a[scores={ap_gamemode=1..}] ap_gamemode_creative 0
-scoreboard players set @a[scores={ap_time=1..}] ap_gamemode_time 0
-scoreboard players set @a[scores={ap_rain=1..}] ap_time_day 0
-scoreboard players set @a[scores={ap_clear_weather=1..}] ap_clear_weather 0
+scoreboard players set @a[scores={ap_gamemode=1..}] ap_xp 0
+scoreboard players set @a[scores={ap_time=1..}] ap_gamemode 0
+scoreboard players set @a[scores={ap_rain=1..}] ap_time 0
+scoreboard players set @a[scores={ap_clear_weather=1..}] ap_weather 0
 scoreboard players set @a[scores={ap_fill_area=1..}] ap_fill_area 0
+scoreboard players set @a[scores={ap_fill_area=1..}] ap_rain 0
 
 
 # Builder tetikleyicilerini etkinleştir
 execute as @a[tag=Builder] run scoreboard players enable @s ap_fill_area
-execute as @a[tag=Builder] run scoreboard players enable @s ap_clear_weather
+execute as @a[tag=Builder] run scoreboard players enable @s ap_weather
 execute as @a[tag=Builder] run scoreboard players enable @s ap_time
 execute as @a[tag=Builder] run scoreboard players enable @s ap_gamemode
+
 execute as @a[tag=Builder] run scoreboard players enable @s ap_rain
