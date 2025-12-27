@@ -1,0 +1,1 @@
+$ban $(player) §c§l⚠ YASAKLANDINIZ §e§lSEBEP §f$(reason) §b§lKAYIT §f$(date)-$(time) §6§lYETKİLİ §e$(admin) §f§lBİLGİ §7Sunucu kuralları ihlali nedeniyle yasaklandınız. §4§l✖ §fAyrıntılı bilgi ve itirazlar için destek kanallarımıza başvurun.
