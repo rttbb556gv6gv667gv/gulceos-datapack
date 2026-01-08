@@ -1,4 +1,4 @@
-# GulceOS – Minecraft 1.21.7+ Vanilla Datapack
+# GulceOS – Minecraft 1.21.7+ Vanilla Datapack (ARCHIVED)
 
 
 <p align="center">
