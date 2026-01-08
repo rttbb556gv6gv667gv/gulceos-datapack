@@ -1,5 +1,8 @@
 # GulceOS – Minecraft 1.21.7+ Vanilla Datapack (ARCHIVED)
 
+> [!WARNING]
+> 🗄️ Old / archived versions are **deprecated** and no longer supported.
+
 
 <p align="center">
   <img src="images/banner.png" width="200">
