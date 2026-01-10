@@ -3,7 +3,7 @@
 > [!WARNING]
 > This repository is **ARCHIVED** and **NO LONGER MAINTAINED**.
 >  
-> 👉 Active version: https://github.com/rttbb556gv6gv667gv/MC-ServerToolkit-Plus
+> 👉 Active version: https://github.com/GulcePacks/MC-ServerToolkit-PlusPlus
 
 <p align="center">
   <img src="images/banner.png" width="200">
